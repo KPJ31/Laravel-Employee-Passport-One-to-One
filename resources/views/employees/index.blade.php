@@ -6,7 +6,7 @@
             <a class="btn btn-primary" href="{{ route('employees.create') }}">Create</a>
             <a class="btn btn-primary" href="{{ route('passports.index') }}">Passport Table</a>
             <div class="card p-4 shadow">
-                <h1 class="text-center mb-3">Employees Table</h1>
+                <h1 class="text-center mb-3 fw-bold">Employees Table</h1>
             <table class="table table-bordered border-dark">
                 <thead>
                     <tr>
@@ -27,7 +27,8 @@
                             <td>{{ $employee->address }}</td>
                             <td>{{ $employee->employee ? $employee->employee->passnum : 'No Passport Number' }}</td>
                             <td>
-                                <a href="{{ route('employees.edit', $employee->id) }}" class="btn btn-primary">Edit</a>
+                                <a href="{{ route('employees.show', $employee->id) }}" class="btn btn-primary">Show</a>
+                                <a href="{{ route('employees.edit', $employee->id) }}" class="btn btn-warning">Edit</a>
                                 <form action="{{ route('employees.destroy', $employee->id) }}" method="POST" style="display:inline-block">
                                     @csrf
                                     @method('DELETE')

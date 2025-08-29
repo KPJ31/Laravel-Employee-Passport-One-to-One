@@ -4,7 +4,7 @@
     <div class="row pt-5">
         <div class="col-5 mx-auto">
             <div class="card p-4 shadow">
-                <h1 class="mb-4 text-center">Employees Form</h1>
+                <h1 class="mb-4 text-center fw-bold">Employees Form</h1>
                 <form action="{{ route('employees.store') }}" method="POST">
                     @csrf
 

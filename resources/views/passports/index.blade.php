@@ -6,7 +6,7 @@
             <a class="btn btn-primary" href="{{ route('employees.create') }}">Create</a>
             <a class="btn btn-primary" href="{{ route('employees.index') }}">Employees Table</a>
             <div class="card p-4 shadow">
-                <h1 class="text-center mb-3">Passports Table</h1>
+                <h1 class="text-center mb-3 fw-bold">Passports Table</h1>
             <table class="table table-bordered border-dark">
                 <thead>
                     <tr>

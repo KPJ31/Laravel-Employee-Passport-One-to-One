@@ -2,9 +2,9 @@
 
 @section('main-content')
     <div class="row pt-5">
-        <div class="col-8 mx-auto">
+        <div class="col-5 mx-auto">
             <div class="card p-4 shadow">
-                <h1 class="mb-4 text-center">Employees Edit Form</h1>
+                <h1 class="mb-4 text-center fw-bold">Employees Edit Form</h1>
                 <form action="{{ route('employees.update', $employee->id) }}" method="POST">
                     @csrf
                     @method('PUT')
@@ -58,8 +58,7 @@
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-success">update</button>
-                        <button type="reset" class="btn btn-secondary">Clear</button>                          
+                        <button type="submit" class="btn btn-success">update</button>                        
                         <a class="btn btn-primary" href="{{ route('employees.index') }}">Back</a>
                     </div>
                     
