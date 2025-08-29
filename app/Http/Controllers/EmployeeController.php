@@ -56,7 +56,7 @@ class EmployeeController extends Controller
      */
     public function show(Employee $employee)
     {
-        //
+        //  
     }
 
     /**
@@ -64,7 +64,7 @@ class EmployeeController extends Controller
      */
     public function edit(Employee $employee)
     {
-        //
+         return view('employees.edit', compact('employee'));
     }
 
     /**
@@ -72,7 +72,25 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, Employee $employee)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'address' => 'required|string',
+        ]);
+
+        $employee->name = $request->name;
+        $employee->email = $request->email;
+        $employee->address = $request->address;
+
+        $employee->save();
+
+        $employee->employee()->update([
+            'passnum' => $request->passnum,
+            'idate' => $request->idate,
+            'edate' => $request->edate,
+        ]);
+            
+        return redirect()->route('employees.index');
     }
 
     /**
@@ -80,6 +98,7 @@ class EmployeeController extends Controller
      */
     public function destroy(Employee $employee)
     {
-        //
+        $employee->delete();
+        return redirect()->route('employees.index')->with('success', 'Employee deleted');
     }
 }
