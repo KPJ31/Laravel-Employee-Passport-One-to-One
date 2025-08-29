@@ -10,6 +10,14 @@
 ## Screen Shots
 ![imagealt](https://github.com/KPJ31/Laravel-Employee-Passport-One-to-One/blob/c05e163ecad5bd1d41d3eb14f5cd2f1aeb2fc19e/Create.png)
 
+![imagealt](https://github.com/KPJ31/Laravel-Employee-Passport-One-to-One/blob/e84ac1165c786813ea10a18f48839bd311e42c1b/Edit.png)
+
+![imagealt](https://github.com/KPJ31/Laravel-Employee-Passport-One-to-One/blob/e84ac1165c786813ea10a18f48839bd311e42c1b/Employee%20Table.png)
+
+![imagealt](https://github.com/KPJ31/Laravel-Employee-Passport-One-to-One/blob/e84ac1165c786813ea10a18f48839bd311e42c1b/Passport%20Table.png)
+
+![imagealt](https://github.com/KPJ31/Laravel-Employee-Passport-One-to-One/blob/e84ac1165c786813ea10a18f48839bd311e42c1b/Show.png)
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
